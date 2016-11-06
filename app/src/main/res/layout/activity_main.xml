@@ -10,10 +10,54 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.thedata_minors.recified.MainActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="329dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/login"
+            android:text="@string/signIn_logIn" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/signIn_signUp"
+            android:id="@+id/signUp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:id="@+id/Password"
+        android:hint="@string/signIn_password"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="190dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#ffffff"
+        android:id="@+id/editText6"
+        android:hint="@string/signIn_username"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>

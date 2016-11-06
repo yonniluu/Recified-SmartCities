@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Recified</string>
+    <string name="signIn_username">Username</string>
+    <string name="signIn_password">Password</string>
+    <string name="signIn_signUp">Sign Up</string>
+    <string name="signIn_logIn">Login</string>
 </resources>
