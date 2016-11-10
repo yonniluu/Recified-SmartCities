@@ -33,7 +33,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="@string/signIn_signUp"
-            android:id="@+id/signUp" />
+            android:id="@+id/signUp"
+            android:onClick="Sign_Up"/>
 
     </LinearLayout>
 
@@ -57,7 +58,7 @@
         android:background="#ffffff"
         android:id="@+id/Username"
         android:text="dat@thon.com"
-        android:hint="@string/signIn_username"
+        android:hint="@string/signIn_email"
         android:paddingLeft="10dp"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
