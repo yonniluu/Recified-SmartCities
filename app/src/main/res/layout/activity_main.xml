@@ -24,7 +24,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:id="@+id/login"
-            android:text="@string/signIn_logIn" />
+            android:text="@string/signIn_logIn"
+            android:onClick="Login"/>
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -42,6 +43,8 @@
         android:background="#ffffff"
         android:id="@+id/Password"
         android:hint="@string/signIn_password"
+        android:inputType="textPassword"
+        android:text="12345678"
         android:paddingLeft="10dp"
         android:layout_marginBottom="190dp"
         android:layout_alignParentBottom="true"
@@ -52,7 +55,8 @@
         android:layout_width="fill_parent"
         android:layout_height="30dp"
         android:background="#ffffff"
-        android:id="@+id/editText6"
+        android:id="@+id/Username"
+        android:text="dat@thon.com"
         android:hint="@string/signIn_username"
         android:paddingLeft="10dp"
         android:layout_centerVertical="true"

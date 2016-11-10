@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "477773568750",
+    "firebase_url": "https://datathon-a4ef1.firebaseio.com",
+    "project_id": "datathon-a4ef1",
+    "storage_bucket": "datathon-a4ef1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477773568750:android:4bdd9d168b0fa5de",
+        "android_client_info": {
+          "package_name": "com.example.thedata_minors.recified"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477773568750-5snql8j5b94qqaubh8rusb5o6hu2bhjo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhFBZ5PZEy9gRBuflpq2FT_mGtIMkLH7M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
