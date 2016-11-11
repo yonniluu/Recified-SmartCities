@@ -1,4 +1,4 @@
-package com.example.thedata_minors.recified.login;
+package com.example.thedata_minors.recified.login.Activity;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
