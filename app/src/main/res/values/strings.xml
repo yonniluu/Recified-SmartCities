@@ -12,4 +12,13 @@
     <string name="signUp_signUp">Sign Up</string>
     <string name="signUp_confirm">Confirm Password</string>
     <string name="title_activity_recreation_map">Map</string>
+
+    <string name="sport_prompt">Choose a sport</string>
+
+    <string-array name="sport_arrays">
+        <item>Volleyball</item>
+        <item>Basketball</item>
+        <item>Tennis</item>
+    </string-array>
+
 </resources>
