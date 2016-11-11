@@ -11,4 +11,5 @@
     <string name="signUp_password">Password</string>
     <string name="signUp_signUp">Sign Up</string>
     <string name="signUp_confirm">Confirm Password</string>
+    <string name="title_activity_recreation_map">Map</string>
 </resources>
