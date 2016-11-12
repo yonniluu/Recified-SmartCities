@@ -35,7 +35,7 @@
             android:layout_marginBottom="10dp"
             android:text="@string/signIn_signUp"
             android:id="@+id/signUp"
-            android:onClick="Sign_Up"/>
+            android:onClick="SignUp"/>
 
     </LinearLayout>
 

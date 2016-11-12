@@ -84,6 +84,15 @@
             android:layout_marginTop="10dp"
             android:paddingLeft="10dp"/>
 
+        <Button
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/button2"
+            android:text="@string/title_activity_register"
+            android:onClick="Register"/>
+
     </LinearLayout>
 
     <RelativeLayout

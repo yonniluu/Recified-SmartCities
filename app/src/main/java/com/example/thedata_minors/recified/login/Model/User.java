@@ -11,7 +11,7 @@ public class User {
     String firstName, lastName, gender;
     int age, score;
 
-    User(String fName, String lName, String g, int age){
+    public User(String fName, String lName, String g, int age){
         firstName = fName;
         lastName = lName;
         gender = g;

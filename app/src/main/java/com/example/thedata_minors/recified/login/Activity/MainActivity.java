@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private final static String TAG = MainActivity.class.getSimpleName();
-    private TextView mUsername , mPassword;
+    private TextView mUsername , mPassword, mFname, mLname, mAge, mGender;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,26 +85,9 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    public void Sign_Up(View view){
-        String emailText = mUsername.getText().toString();
-        String passwordText = mPassword.getText().toString();
-        mAuth.createUserWithEmailAndPassword(emailText, passwordText)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        Log.d(TAG, "createUserWithEmail:onComplete:" + task.isSuccessful());
-
-                        // If sign in fails, display a message to the user. If sign in succeeds
-                        // the auth state listener will be notified and logic to handle the
-                        // signed in user can be handled in the listener.
-                        if (!task.isSuccessful()) {
-                            Toast.makeText(MainActivity.this, "Failed",
-                                    Toast.LENGTH_SHORT).show();
-                        }
-
-                        // ...
-                    }
-                });
+    public void SignUp(View view){
+        Intent signUpIntent = new Intent(getApplicationContext(),SignUpActivity.class);
+        startActivity(signUpIntent);
     }
 
 }
