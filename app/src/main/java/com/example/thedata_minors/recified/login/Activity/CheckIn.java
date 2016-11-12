@@ -16,7 +16,7 @@ public class CheckIn extends AppCompatActivity{
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_recreation_centre);
+            setContentView(R.layout.activity_checkin);
 
             Intent myIntent = getIntent();
             String SportName = myIntent.getStringExtra("SportName");

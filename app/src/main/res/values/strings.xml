@@ -14,11 +14,18 @@
     <string name="title_activity_recreation_map">Map</string>
 
     <string name="sport_prompt">Choose a sport</string>
+    <string name="user_prompt">Current Users</string>
 
     <string-array name="sport_arrays">
         <item>Volleyball</item>
         <item>Basketball</item>
         <item>Tennis</item>
+    </string-array>
+
+    <string-array name="user_arrays">
+        <item>John(Level 3)</item>
+        <item>Ben(Level 2)</item>
+        <item>Jessica(Level 1)</item>
     </string-array>
 
 </resources>
