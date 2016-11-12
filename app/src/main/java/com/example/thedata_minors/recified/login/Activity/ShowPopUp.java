@@ -10,7 +10,7 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.view.ViewGroup.LayoutParams;
 
-public class ShowPopUpWindow extends Activity {
+public class ShowPopUp extends Activity {
 
     boolean isClicked = true;
     PopupWindow popUpWindow;

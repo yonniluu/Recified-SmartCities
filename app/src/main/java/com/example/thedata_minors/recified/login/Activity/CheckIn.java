@@ -14,35 +14,16 @@ import com.example.thedata_minors.recified.R;
 
 public class CheckIn extends AppCompatActivity{
 
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_checkin);
-
-            Intent myIntent = getIntent();
-            String SportName = myIntent.getStringExtra("SportName");
-            String CurrentUsers = myIntent.getStringExtra("CurrentUsers");
-            String Capacity = myIntent.getStringExtra("Capacity");
-            String Level = myIntent.getStringExtra("Level");
-            String Name = myIntent.getStringExtra("Name");
-
-            TextView Title_Text = (TextView)findViewById(R.id.Title);
-            Title_Text.setText(SportName);
-
-            TextView Hours_Text = (TextView)findViewById(R.id.Hours);
-            Hours_Text.setText(CurrentUsers);
-
-            TextView Location_Text = (TextView)findViewById(R.id.Location);
-            Location_Text.setText(Capacity);
-
-            TextView Phone_Text = (TextView)findViewById(R.id.Phone);
-            Phone_Text.setText(Level);
-        }
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_checkin);
+    }
 
     /** Called when the user clicks the Check in button */
     public void popUp(View view) {
-        Intent intent = new Intent(this, ShowPopUpWindow.class);
+        Intent intent = new Intent(this, ShowPopUp.class);
         startActivity(intent);
 
     }
-    }
+}
