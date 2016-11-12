@@ -43,12 +43,10 @@
             android:name=".login.Activity.RecreationMap"
             android:label="@string/title_activity_recreation_map" />
         <activity android:name=".login.Activity.RecreationCentre" />
-<<<<<<< HEAD
         <activity android:name=".login.Activity.ShowPopUp" />
         <activity android:name=".login.Activity.CheckIn"></activity>
-=======
+
         <activity android:name=".login.Activity.SignUpActivity"></activity>
->>>>>>> 4f356bb0f6b7ae72bc5304400db2feced55f923d
     </application>
 
 </manifest>
