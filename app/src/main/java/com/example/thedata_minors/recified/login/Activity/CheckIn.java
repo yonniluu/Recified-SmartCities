@@ -3,6 +3,7 @@ package com.example.thedata_minors.recified.login.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
 
 import com.example.thedata_minors.recified.R;
@@ -37,4 +38,11 @@ public class CheckIn extends AppCompatActivity{
             TextView Phone_Text = (TextView)findViewById(R.id.Phone);
             Phone_Text.setText(Level);
         }
+
+    /** Called when the user clicks the Check in button */
+    public void popUp(View view) {
+        Intent intent = new Intent(this, ShowPopUpWindow.class);
+        startActivity(intent);
+
+    }
     }

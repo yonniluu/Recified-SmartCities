@@ -64,8 +64,8 @@ public class RecreationCentre extends AppCompatActivity {
     }
 
 
-    /** Called when the user clicks the Sign in button */
-    public void signIn(View view) {
+    /** Called when the user clicks the Check in button */
+    public void checkIn(View view) {
         Intent intent = new Intent(this, CheckIn.class);
         startActivity(intent);
 

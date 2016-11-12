@@ -87,6 +87,7 @@
             android:id="@+id/Check_In_Button"
             android:layout_marginTop="76dp"
             android:layout_below="@+id/tableRow3"
+            android:onClick="popUp"
             android:layout_centerHorizontal="true" />
 
         <Spinner
