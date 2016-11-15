@@ -19,12 +19,14 @@
     <string name="user_prompt">Current Users</string>
 
     <string-array name="sport_arrays">
+        <item>Choose a sport</item>
         <item>Volleyball</item>
         <item>Basketball</item>
         <item>Tennis</item>
     </string-array>
 
     <string-array name="user_arrays">
+        <item>Current Users</item>
         <item>John(Level 3)</item>
         <item>Ben(Level 2)</item>
         <item>Jessica(Level 1)</item>
