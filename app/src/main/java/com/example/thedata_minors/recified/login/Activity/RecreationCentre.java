@@ -41,23 +41,10 @@ public class RecreationCentre extends AppCompatActivity {
         Phone_Text.setText(Phone);
 
 
-        addItemsOnSpinner2();
         addListenerOnSpinnerItemSelection();
     }
 
     // add items into spinner dynamically
-    public void addItemsOnSpinner2() {
-
-        Spinner spinner2 = (Spinner) findViewById(R.id.spinner2);
-        List<String> list = new ArrayList<String>();
-        list.add("list 1");
-        list.add("list 2");
-        list.add("list 3");
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_spinner_item, list);
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner2.setAdapter(dataAdapter);
-    }
 
     public void addListenerOnSpinnerItemSelection() {
         Spinner spinner1 = (Spinner) findViewById(R.id.spinner1);

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -10,111 +11,116 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        android:background="@drawable/background">
+        android:background="#f4f8ff">
         tools:context="com.example.hanta.telus_datathon.RecreationCentre">
 
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="1000px"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_height="500px"
+            android:background="#7cbde9" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Volleyball"
             android:id="@+id/Title"
-            android:textSize="30dp"
             android:gravity="center"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:textStyle="bold" />
-
-        <TableRow
-            android:id="@+id/tabla_cabecera"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"></TableRow>
-
-        <TableLayout
-            android:id="@+id/tabla_cuerpo"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </TableLayout>
-
-
-        <TableRow
-            android:id="@+id/tableRow2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="37dp"
-            android:layout_below="@+id/Capacity"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tableRow2"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tableRow4"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tableRow1"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
-
-        </TableRow>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Check In"
-            android:id="@+id/Check_In_Button"
-            android:layout_marginTop="76dp"
-            android:layout_below="@+id/tableRow3"
-            android:onClick="popUp"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/button_style"
-            android:textColor="#ffffff"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:fontFamily="serif"
+            android:textStyle="normal|bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Capacity 3/30"
             android:id="@+id/Capacity"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:gravity="center"
             android:textStyle="bold"
-            android:layout_marginTop="11dp"
+            android:textColor="#ffffff"
             android:layout_below="@+id/Title"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="serif" />
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check In"
+        android:id="@+id/Check_In_Button"
+            android:onClick="popUp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+        android:background="@drawable/button_style"
+            android:textStyle="normal|bold"
+            android:textColor="#ffffff"
+            android:fontFamily="serif"
+            android:layout_marginTop="131dp"
+            android:layout_below="@+id/imageView3"
             android:layout_centerHorizontal="true" />
 
-        <Spinner
-            android:id="@+id/spinner1"
+        <TextView
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:entries="@array/user_arrays"
-            android:prompt="@string/user_prompt"
-            android:layout_below="@+id/tableRow2"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="18dp"
+            android:text="Current Users"
+            android:gravity="center"
+            android:layout_span="6"
+            android:layout_marginTop="31dp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/Capacity"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:background="@drawable/dropdown_style"/>
+            android:layout_alignParentStart="true"></TextView>
+        <TextView
+            android:text="Leval 10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Johnlevel"
+            android:textColor="#ffffff"
+            android:fontFamily="serif"
+            android:textStyle="normal|bold" />
+        <TextView
+            android:text="John"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:id="@+id/John"
+            android:textColor="#ffffff"
+            android:fontFamily="serif"
+            android:layout_below="@+id/textView2"
+            android:textStyle="normal|bold"
+            android:layout_alignLeft="@+id/Shirley"
+            android:layout_alignStart="@+id/Shirley" />
+        <TextView
+            android:text="Leval 6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Shirleylevel"
+            android:textColor="#ffffff"
+            android:fontFamily="serif"
+            android:textStyle="normal|bold" />
+        <TextView
+            android:text="Shirley"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Shirley"
+            android:textColor="#ffffff"
+            android:fontFamily="serif"
+            android:textStyle="normal|bold"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/Capacity"
+            android:layout_toStartOf="@+id/Capacity" />
 
     </RelativeLayout>
 </ScrollView>
