@@ -17,12 +17,12 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="1000px"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_height="500px"
-            android:background="#7cbde9" />
+            android:layout_height="1000px"
+            android:background="#7cbde9"
+            android:layout_width="3000px" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -62,7 +62,7 @@
         android:background="@drawable/button_style"
             android:textStyle="normal|bold"
             android:textColor="#ffffff"
-            android:fontFamily="serif"
+            android:fontFamily="seirf"
             android:layout_marginTop="131dp"
             android:layout_below="@+id/imageView3"
             android:layout_centerHorizontal="true" />
@@ -73,7 +73,6 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:typeface="serif"
-            android:textSize="18dp"
             android:text="Current Users"
             android:gravity="center"
             android:layout_span="6"
@@ -81,46 +80,51 @@
             android:textColor="#ffffff"
             android:layout_below="@+id/Capacity"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"></TextView>
+            android:layout_alignParentStart="true"
+            android:textSize="20dp"></TextView>
+
         <TextView
-            android:text="Leval 10"
+            android:text="John|Level10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/Johnlevel"
-            android:textColor="#ffffff"
-            android:fontFamily="serif"
-            android:textStyle="normal|bold" />
-        <TextView
-            android:text="John"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
             android:id="@+id/John"
             android:textColor="#ffffff"
             android:fontFamily="serif"
-            android:layout_below="@+id/textView2"
             android:textStyle="normal|bold"
-            android:layout_alignLeft="@+id/Shirley"
-            android:layout_alignStart="@+id/Shirley" />
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp" />
+
         <TextView
-            android:text="Leval 6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/Shirleylevel"
-            android:textColor="#ffffff"
-            android:fontFamily="serif"
-            android:textStyle="normal|bold" />
-        <TextView
-            android:text="Shirley"
+            android:text="Shirley|Level 5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/Shirley"
             android:textColor="#ffffff"
             android:fontFamily="serif"
             android:textStyle="normal|bold"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/Capacity"
-            android:layout_toStartOf="@+id/Capacity" />
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/John"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Profile"
+            android:id="@+id/Profile_Button"
+            android:background="@drawable/button_style"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:onClick="profile"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignLeft="@+id/Check_In_Button"
+            android:layout_alignStart="@+id/Check_In_Button"
+            android:layout_marginTop="59dp"
+            android:fontFamily="serif" />
 
     </RelativeLayout>
 </ScrollView>

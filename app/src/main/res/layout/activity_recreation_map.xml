@@ -15,8 +15,11 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Recreation Centre Locations"
         android:id="@+id/Title"
-        android:textSize="30dp"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:background="#7cbde9"
         android:gravity="center"
+        android:textColor="#ffffff"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textStyle="bold" />

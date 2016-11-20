@@ -14,6 +14,7 @@ public class ShowPopUp extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        final Intent goBackIntent = new Intent(getApplicationContext(),CheckIn.class);
         new SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
                 .setTitleText("Confirm?")
                 .setContentText("Checking in at Surrey Leisure center for basketball")
@@ -23,13 +24,16 @@ public class ShowPopUp extends Activity {
                 .setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
                     @Override
                     public void onClick(SweetAlertDialog sDialog) {
-                        sDialog.cancel();
+                        startActivity(goBackIntent);
                     }
                 })
+                .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    @Override
+                    public void onClick(SweetAlertDialog sDialog) {
+                        startActivity(goBackIntent);
+                    }
+                } )
                 .show();
-
-        Intent goBackIntent = new Intent(getApplicationContext(),CheckIn.class);
-        startActivity(goBackIntent);
 
     }
 }
